@@ -1,0 +1,15 @@
+.circularMenu li{
+    transition: .2s ease-in-out;
+}
+
+.circularMenu li:hover li{
+    filter: brightness(100%);
+}
+
+.circularMenu:has(li:hover) li:not(:hover){
+    filter: brightness(50%);
+}
+
+.shapelessDiv {
+    border-radius: 64% 36% 22% 78% / 63% 25% 75% 37%;
+}
