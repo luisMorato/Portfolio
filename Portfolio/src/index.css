@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --default-bg-color: #111010;
+    --default-font-family: 'roboto';
+    --variant-font-family: 'Baloo 2';
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-color: var(--default-bg-color);
+    font-family: var(--default-font-family);
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    padding: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: var(--variant-font-family);
+    line-height: 1.4;
+}

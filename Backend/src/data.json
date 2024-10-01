@@ -1,0 +1,36 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Clothing Ecommerce",
+        "desc": "This project aims to build a clothing E-commerce, with a Login and Registration system using next-auth. To build the design and features of the project, the following were used: HTML, CSS, JavaScript, React.js, Next.js, TypeScript and TailwindCSS. Furthermore, the project has a simple database, generated through prism and using MongoDb.",
+        "imgSrc": "public/Images/Ecommerce-Design-HomePage.png",
+        "codeLink": "https://github.com/luisMorato/ClothingEcommerce",
+        "demoLink": "https://clothing-ecommerce-five.vercel.app"
+      },
+      {
+        "id": 2,
+        "name": "Gym Site",
+        "desc": "The project aims to build a gym website from scratch, with a basic registration system, login and some other features. In this project, tools such as: HTML, CSS, JavaScript, React.js, Next.js, TypeScript and TailwindCSS were used. Furthermore, to generate the schema for the database, Prism was used.",
+        "imgSrc": "public/Images/Site-Home-Page-Prototype.png",
+        "codeLink": "https://github.com/luisMorato/Gym-Site-Nextjs",
+        "demoLink": "https://gym-site-nextjs.vercel.app"
+      },
+      {
+        "id": 3,
+        "name": "React - To Do Project",
+        "desc": "Simple project using tools such as: HTML, CSS, JavaScript, TypeScript, React.js, and TailwindCSS. The application consists of a system for creating and managing a task list. In this project, no database was used, all data is saved in LocalStorage. Furthermore, this project was built to improve my skills in pure React.js and also train the use of custom hooks and context.",
+        "imgSrc": "public/Images/React-ToDo-Project.png",
+        "codeLink": "https://github.com/luisMorato/React-ToDo-Project",
+        "demoLink": "https://main--graceful-madeleine-22d650.netlify.app"
+      },
+      {
+        "id": 4,
+        "name": "React Box Shadow Generator",
+        "desc": "This project is a simple web application developed with HTML, CSS, JavaScript and React.js, with an emphasis on using TailwindCSS for styling. The main goal of this project is to create an interactive tool for generating and experimenting with different styles of box shadows in HTML elements. Box Shadow Generator allows users to easily adjust shadow parameters such as offset, blur, color properties, and opacity to create and preview custom shadows in real time.",
+        "imgSrc": "public/Images/Box-Shadow-Generator.png",
+        "codeLink": "https://github.com/luisMorato/React--Box-Shadow-Generator",
+        "demoLink": "https://react-box-shadow-generator.vercel.app"
+      }
+    ]
+}
