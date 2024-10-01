@@ -1,11 +1,11 @@
 import { format } from 'date-fns'
 import { Resend } from 'resend'
 
-import { env } from '../Schemas/env'
+import { env } from '../Schemas/env.js'
 
-import { mailProps, mailUseCasesProps } from '../@types/mail'
+import { mailProps, mailUseCasesProps } from '../@types/mail.js'
 
-import { BadRequest } from '../_errors/BadRequest'
+import { BadRequest } from '../_errors/BadRequest.js'
 
 const resend = new Resend(env.RESEND_API_SECRET_KEY)
 
