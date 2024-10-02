@@ -4,10 +4,6 @@
         "src": "src/server.ts",
         "use": "@vercel/node"
     }],
-    "rewrites": [{
-        "source": "/public/(.*)",
-        "destination": "/public/$1"
-    }],
     "routes": [{
         "src": "(.*)",
         "dest": "src/server.ts"
