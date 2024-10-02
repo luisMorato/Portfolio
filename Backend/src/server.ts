@@ -19,8 +19,6 @@ const app: FastifyInstance = fastify()
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
 
-console.log(path.join(import.meta.dirname, '../', 'public'))
-
 app.register(fastifyStatic, {
   root: path.join(path.join(import.meta.dirname, '../', 'public')),
   prefix: '/public/',
