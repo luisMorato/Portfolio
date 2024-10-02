@@ -5,7 +5,7 @@ import { FiExternalLink } from 'react-icons/fi'
 
 import Anchor from '@Components/Text/Anchor'
 
-import { env } from 'src/Schemas/envSchema'
+// import { env } from 'src/Schemas/envSchema'
 import { useContext } from 'react'
 import { ProjectContext } from '../..'
 
@@ -18,7 +18,6 @@ const ProjectsCard = () => {
     codeLink,
     demoLink,
   } = project
-
   return (
     <div
       // Fix the CSS
@@ -31,7 +30,7 @@ const ProjectsCard = () => {
       <div className="flex w-full justify-center self-center overflow-hidden min-w-[300px] max-w-[400px]">
         <Link to={demoLink} rel="external" target="_blank">
           <img
-            src={`${env.VITE_BACKEND_URL}/${imgSrc}`}
+            src={`${imgSrc}`}
             alt={`${name}-image`}
             className="hover:scale-[1.02] transition duration-150 object-cover"
           />
