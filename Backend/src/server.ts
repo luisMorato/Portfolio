@@ -7,7 +7,6 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 
-import dotenv from 'dotenv'
 import { env } from './Schemas/env.js'
 import { errorHandler } from './errorHandler.js'
 
@@ -15,7 +14,6 @@ import { errorHandler } from './errorHandler.js'
 import { mailRoutes } from './Routes/Mail.routes.js'
 import { projectsRoutes } from './Routes/Project.routes.js'
 
-dotenv.config()
 const app: FastifyInstance = fastify()
 
 app.setValidatorCompiler(validatorCompiler)
@@ -40,10 +38,12 @@ app.register(projectsRoutes, {
 
 app.setErrorHandler(errorHandler)
 
-const port = 8080
+const port = env.PORT || 4000
 
 try {
-  app.listen({ port }, () => console.log(`Server Running at Port: ${port}`))
+  app.listen({ port, host: '0.0.0.0' }, () =>
+    console.log(`Server Running at Port: ${port}`),
+  )
 } catch (error) {
   console.log(`Error Starting the Server: ${error}`)
   process.exit(1)

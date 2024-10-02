@@ -1,6 +1,7 @@
 import { z } from 'zod'
 
 const envSchema = z.object({
+  PORT: z.string().transform((val) => parseInt(val, 10)),
   FRONTEND_URL: z.string().url(),
   RESEND_API_SECRET_KEY: z.string(),
 })
