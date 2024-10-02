@@ -7,6 +7,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 
+import dotenv from 'dotenv'
 import { env } from './Schemas/env.js'
 import { errorHandler } from './errorHandler.js'
 
@@ -14,6 +15,7 @@ import { errorHandler } from './errorHandler.js'
 import { mailRoutes } from './Routes/Mail.routes.js'
 import { projectsRoutes } from './Routes/Project.routes.js'
 
+dotenv.config()
 const app: FastifyInstance = fastify()
 
 app.setValidatorCompiler(validatorCompiler)
